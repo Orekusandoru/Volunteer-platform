@@ -5,3 +5,45 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 10ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 5087)
 
 
+Started GET "/" for 127.0.0.1 at 2023-04-13 22:14:33 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 296)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 1006)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-13 22:14:34 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 16)
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 250)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-13 22:14:35 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 223)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-13 22:14:35 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 218)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-13 23:29:13 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.4ms | Allocations: 527)
+Completed 200 OK in 19ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3748)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-13 23:29:25 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.3/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 296)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1016)
+
+
