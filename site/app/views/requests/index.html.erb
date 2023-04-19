@@ -35,7 +35,10 @@
     </div>
   </tbody>
 </table>
-  <%= link_to "New request", new_request_path %>
 
+<% unless current_user.admin_permit %>
+  <%=  link_to "New request", new_request_path, class:"btn btn-primary"  %>
+<% end %>
+  
 
 
