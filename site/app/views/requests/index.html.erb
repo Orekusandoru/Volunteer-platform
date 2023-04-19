@@ -24,7 +24,7 @@
           <td><%= request.last_name %></td>
           <td><%= request.email %></td>
           <td><%= request.phone %></td>
-          <td><%= request.text_of_request %></td>
+          <td><%= truncate(request.text_of_request, length: 100, separator: '...') %></td>
           <td>
             <p>
               <%= link_to "Show this request", request %>

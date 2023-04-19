@@ -1,10 +1,28 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @request %>
 
+<p>
+<div class="card">
+  <div class="card-header">
+    <%=@request.category%>
+    
+  </div>
+
+    <div class="card-body">
+      <br>
+      <h5 class="card-title"><%=@request.last_name+' '+@request.first_name%></h5>
+      <h5 class="card-title"><%=@request.email+"  "%>|<%="  "+@request.phone%></h5>
+      <br>
+      <p class="card-text"><%=@request.text_of_request%></p>
+      <br>
+      <%= link_to "Edit this request", edit_request_path(@request),class:"btn btn-outline-primary" %> |
+      <%= link_to "Back to requests", requests_path,class:"btn btn-outline-primary" %>
+    </div>
+</div>
+
+</p>
 <div>
-  <%= link_to "Edit this request", edit_request_path(@request) %> |
-  <%= link_to "Back to requests", requests_path %>
-
+<br>
+<br>
   <%= button_to "Destroy this request", @request, method: :delete %>
 </div>
