@@ -10,7 +10,7 @@
       <th scope="col">Email</th>
       <th scope="col">Phone</th>
       <th scope="col">Text</th>
-      <th scope="col">Edit</th>
+      <th scope="col">Show</th>
     </tr>
   </thead>
 
@@ -27,7 +27,10 @@
           <td><%= truncate(request.text_of_request, length: 100, separator: '...') %></td>
           <td>
             <p>
+            
               <%= link_to "Show this request", request %>
+            
+              
             </p></td>
         </tr>
         
