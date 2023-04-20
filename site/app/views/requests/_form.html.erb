@@ -1,0 +1,55 @@
+<%= form_with(model: request) do |form| %>
+  <% if request.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(request.errors.count, "error") %> prohibited this request from being saved:</h2>
+
+      <ul>
+        <% request.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
+  <div class="btn-group">
+    <%= form.label :category, style: "display: block"%>
+  </div>
+  <div class="btn-group">
+    <%= form.select :category, [['Choose the category', ''],['House', 'House'], ['Food', 'Food'], ['Transportation', 'Transportation'], ['Consulting', 'Consulting'],['Medical services','Medical services'],['Legal services','Legal services']], {}, { class: 'form-control', type: "button", class: "btn btn-danger dropdown-toggle", prompt: 'Choose the category' } %>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-group">
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name,class:"form-control",placeholder:"Joe" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name,class:"form-control",placeholder:"Biden"%>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email,class:"form-control",placeholder:"example@example.com" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone,class:"form-control",placeholder:"012 45 67 891" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :text_of_request, style: "display: block" %>
+    <%= form.text_area :text_of_request,class:"form-control",placeholder:"Here you can write about your request" %>
+  </div>
+  <br>
+  <div>
+    <%= form.submit class: "btn btn-success"%>
+  </div>
+<% end %>
