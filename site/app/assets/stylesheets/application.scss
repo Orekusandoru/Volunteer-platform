@@ -1,6 +1,26 @@
 @import "bootstrap";
-@import "colors";
 
-main_page{
-    font-size: 2rem;
-}
+.navbar-indigo {
+    color: $white;
+    background-color: $indigo-300;
+  }
+.nav-button {
+    margin-right: 10px;
+    
+  }
+.navbar-nav {
+    font-weight: bold!important;
+    
+    
+  }
+.nav-link {
+    color: white !important;
+    font-weight: bold!important;
+  }
+.navbar-brand {
+    color: $teal-400 !important;
+    font-size: 1.5rem !important;
+    font-weight: bold!important;
+  }
+  
+  

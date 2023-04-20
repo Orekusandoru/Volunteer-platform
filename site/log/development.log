@@ -12028,3 +12028,2108 @@ Processing by RequestsController#new as HTML
 Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 9557)
 
 
+Started GET "/home/about" for 127.0.0.1 at 2023-04-19 18:50:10 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 263)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 5.8ms | Allocations: 1886)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 8704)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.5ms | Allocations: 9547)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-19 18:50:25 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.6ms | Allocations: 3078)
+  Rendered requests/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3433)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.6ms | Allocations: 1316)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 10708)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.1ms | Allocations: 11403)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-19 18:58:33 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 55)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 1332)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 7312)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.4ms | Allocations: 7591)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-19 19:00:35 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 55)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 1143)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 7157)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 7420)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-19 19:00:44 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 135)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 4.9ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 8428)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.6ms | Allocations: 9279)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-19 19:01:07 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 135)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.8ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 8425)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 9295)
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Started GET "/" for 127.0.0.1 at 2023-04-20 12:20:46 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 342)
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 869)
+  Rendered layout layouts/application.html.erb (Duration: 1137.6ms | Allocations: 58066)
+Completed 200 OK in 1146ms (Views: 1140.1ms | ActiveRecord: 0.0ms | Allocations: 61512)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:20:54 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 131)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6447)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 6850)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-04-20 12:20:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 725)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5084)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 262)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 11298)
+Completed 200 OK in 56ms (Views: 43.9ms | ActiveRecord: 0.4ms | Allocations: 19497)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-20 12:21:10 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sasha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sasha@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 225ms (ActiveRecord: 0.3ms | Allocations: 5957)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 12:21:11 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.1ms | Allocations: 1387)
+  Rendered layouts/_allerts.html.erb (Duration: 0.8ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 7835)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.3ms | Allocations: 8147)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-20 12:21:13 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.3ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 6686)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 425)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 13104)
+Completed 200 OK in 36ms (Views: 30.6ms | ActiveRecord: 0.8ms | Allocations: 15090)
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2023-04-20 12:21:16 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:63:in `set_request'
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/requests/show.html.erb:18
+  Rendered requests/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1602)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 7730)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 9306)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-20 12:21:20 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 11.3ms | Allocations: 3704)
+  Rendered requests/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 4021)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 1306)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 11226)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.1ms | Allocations: 11597)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-20 12:21:32 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.2ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1563)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7708)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 8016)
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2023-04-20 12:21:33 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:63:in `set_request'
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/requests/show.html.erb:18
+  Rendered requests/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1269)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 7395)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 8150)
+
+
+Started GET "/requests/1/edit" for 127.0.0.1 at 2023-04-20 12:21:35 +0300
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:63:in `set_request'
+  Rendering layout layouts/application.html.erb
+  Rendering requests/edit.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.4ms | Allocations: 2452)
+  Rendered requests/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2792)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 1141)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 9682)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 10498)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 12:30:03 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 1353)
+  Rendered layout layouts/application.html.erb (Duration: 4284.2ms | Allocations: 37451)
+Completed 200 OK in 4285ms (Views: 4284.6ms | ActiveRecord: 0.3ms | Allocations: 37712)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:30:10 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 7094)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 7356)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:30:11 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 7100)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 7363)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:35:21 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 137)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 1731)
+  Rendered layout layouts/application.html.erb (Duration: 4217.5ms | Allocations: 39964)
+Completed 200 OK in 4219ms (Views: 4218.4ms | ActiveRecord: 0.1ms | Allocations: 40815)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:35:39 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 134)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.9ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 8447)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 9318)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:36:50 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8437)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 9307)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:36:50 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 7096)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 7377)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:36:51 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 9.4ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 7096)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms | Allocations: 7358)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:36:51 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 8.7ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 7099)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.1ms | Allocations: 7361)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:36:51 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7099)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 7362)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:36:51 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 7088)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 7350)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:37:08 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4245.2ms | Allocations: 39573)
+Completed 200 OK in 4246ms (Views: 4245.4ms | ActiveRecord: 0.1ms | Allocations: 39835)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:40:39 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 315.0ms | Allocations: 21991)
+Completed 500 Internal Server Error in 316ms (ActiveRecord: 0.0ms | Allocations: 22251)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: variables.
+        on line 1:1 of app/assets/stylesheets/_colors.scss
+        from line 2:1 of app/assets/stylesheets/application.scss
+>> @import 'variables';
+
+   ^
+):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12: 
+    13:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+app/assets/stylesheets/_colors.scss:1
+app/views/layouts/application.html.erb:10
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:40:53 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 314.2ms | Allocations: 16662)
+Completed 500 Internal Server Error in 315ms (ActiveRecord: 0.0ms | Allocations: 16935)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: variables.
+        on line 2:1 of app/assets/stylesheets/application.scss
+>> @import 'variables';
+
+   ^
+):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12: 
+    13:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:10
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:41:38 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 313.5ms | Allocations: 16344)
+Completed 500 Internal Server Error in 314ms (ActiveRecord: 0.0ms | Allocations: 16581)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: variables.
+        on line 2:1 of app/assets/stylesheets/application.scss
+>> @import 'variables';
+
+   ^
+):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12: 
+    13:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:10
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:41:46 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 8548)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 9393)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:42:14 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4203.6ms | Allocations: 37248)
+Completed 200 OK in 4205ms (Views: 4204.4ms | ActiveRecord: 0.1ms | Allocations: 37530)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:42:53 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4180.5ms | Allocations: 37064)
+Completed 200 OK in 4181ms (Views: 4180.8ms | ActiveRecord: 0.1ms | Allocations: 37326)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:46:34 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4194.5ms | Allocations: 38446)
+Completed 200 OK in 4195ms (Views: 4194.7ms | ActiveRecord: 0.1ms | Allocations: 38709)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:49:26 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 7.8ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 7084)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 7346)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:50:24 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4224.9ms | Allocations: 37062)
+Completed 200 OK in 4225ms (Views: 4225.1ms | ActiveRecord: 0.1ms | Allocations: 37324)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:50:41 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4229.5ms | Allocations: 37076)
+Completed 200 OK in 4230ms (Views: 4229.8ms | ActiveRecord: 0.1ms | Allocations: 37339)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:50:52 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4176.7ms | Allocations: 37060)
+Completed 200 OK in 4177ms (Views: 4176.9ms | ActiveRecord: 0.1ms | Allocations: 37322)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:51:02 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 7119)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 7381)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:51:28 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4201.3ms | Allocations: 37084)
+Completed 200 OK in 4202ms (Views: 4201.5ms | ActiveRecord: 0.1ms | Allocations: 37346)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:52:38 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4210.7ms | Allocations: 37069)
+Completed 200 OK in 4211ms (Views: 4211.0ms | ActiveRecord: 0.1ms | Allocations: 37331)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:55:23 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4187.7ms | Allocations: 37065)
+Completed 200 OK in 4188ms (Views: 4188.0ms | ActiveRecord: 0.1ms | Allocations: 37327)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:55:56 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 8433)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 9285)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:55:58 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7067)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7348)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:56:03 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 7091)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 7353)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 12:56:04 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 7201)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 7516)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:56:16 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 134)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 8421)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 9273)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:56:23 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8437)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 9307)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:56:33 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 134)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 5.8ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 8452)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 9322)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:56:41 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 134)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8452)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 9322)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:58:03 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3515.3ms | Allocations: 15547)
+Completed 500 Internal Server Error in 3516ms (ActiveRecord: 0.0ms | Allocations: 15809)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$ligth".
+        on line 5:12 of app/assets/stylesheets/application.scss
+>>     color: $ligth;
+
+   -----------^
+):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12: 
+    13:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+app/assets/stylesheets/application.scss:5
+app/views/layouts/application.html.erb:10
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 12:59:06 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4190.6ms | Allocations: 37120)
+Completed 200 OK in 4191ms (Views: 4190.8ms | ActiveRecord: 0.1ms | Allocations: 37383)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:06:53 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 1341)
+  Rendered layout layouts/application.html.erb (Duration: 4234.9ms | Allocations: 37259)
+Completed 200 OK in 4236ms (Views: 4235.4ms | ActiveRecord: 0.5ms | Allocations: 37519)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:07:58 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 4188.0ms | Allocations: 38485)
+Completed 200 OK in 4189ms (Views: 4188.2ms | ActiveRecord: 0.1ms | Allocations: 38747)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:19:37 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.6ms | Allocations: 1308)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 7289)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 7549)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:20:55 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8437)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 9282)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-04-20 13:20:56 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 10ms (ActiveRecord: 0.1ms | Allocations: 4622)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:20:56 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 125)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 427)
+  Rendered layouts/_allerts.html.erb (Duration: 3.9ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 6917)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 7297)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:21:14 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 838)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7545)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 8405)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:21:46 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 7657)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 8536)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:22:17 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 7672)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 8551)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:22:18 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6464)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 6746)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:23:23 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 7675)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 8535)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:23:24 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6476)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 6757)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:23:32 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 133)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 7667)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 8527)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:24:31 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 6.9ms | Allocations: 980)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 7675)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 8555)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:25:44 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 6467)
+Completed 200 OK in 34ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 6749)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:25:49 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6461)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6723)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:25:57 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 6455)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 6717)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:26:08 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 137)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 7668)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 8528)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:27:40 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 7669)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 8538)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:27:42 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6452)
+Completed 200 OK in 7ms (Views: 7.0ms | Allocations: 6730)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:28:19 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 980)
+  Rendered layout layouts/application.html.erb (Duration: 4185.1ms | Allocations: 37843)
+Completed 200 OK in 4187ms (Views: 4186.3ms | Allocations: 38695)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:28:43 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 7661)
+Completed 200 OK in 10ms (Views: 9.9ms | Allocations: 8531)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-20 13:28:50 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (Allocations: 374)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.2ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2285)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 523)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8743)
+Completed 200 OK in 15ms (Views: 14.8ms | Allocations: 9721)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-20 13:29:04 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sasha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sasha@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 209ms (ActiveRecord: 0.3ms | Allocations: 2984)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:29:04 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 1209)
+  Rendered layouts/_allerts.html.erb (Duration: 0.7ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7402)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 7667)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:29:11 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 108)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 7209)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 7525)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-20 13:29:12 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.2ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2192)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 422)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8599)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 9289)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-20 13:29:13 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.4ms | Allocations: 2957)
+  Rendered requests/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3251)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 1142)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 10150)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.1ms | Allocations: 10522)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-20 13:29:14 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1536)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 7680)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 7956)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:29:16 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 7104)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 7368)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:32:01 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 137)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 4.1ms | Allocations: 1731)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 8427)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.1ms | Allocations: 9279)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:32:03 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.4ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 7112)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.1ms | Allocations: 7393)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-04-20 13:32:04 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5ms (ActiveRecord: 0.1ms | Allocations: 1858)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:32:04 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 552)
+  Rendered layouts/_allerts.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6734)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 6996)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:32:05 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6450)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 6712)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:32:06 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6450)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 6713)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:32:18 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4242.7ms | Allocations: 36635)
+Completed 200 OK in 4243ms (Views: 4242.9ms | ActiveRecord: 0.0ms | Allocations: 36897)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:33:45 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4215.3ms | Allocations: 36453)
+Completed 200 OK in 4216ms (Views: 4216.2ms | ActiveRecord: 0.0ms | Allocations: 36716)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:34:18 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4165.3ms | Allocations: 37834)
+Completed 200 OK in 4166ms (Views: 4165.6ms | ActiveRecord: 0.0ms | Allocations: 38097)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:34:44 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4235.1ms | Allocations: 36273)
+Completed 200 OK in 4236ms (Views: 4235.3ms | ActiveRecord: 0.0ms | Allocations: 36535)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:34:59 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4203.7ms | Allocations: 36247)
+Completed 200 OK in 4204ms (Views: 4204.0ms | ActiveRecord: 0.0ms | Allocations: 36509)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:36:40 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6391)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6653)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:38:05 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 5.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6388)
+Completed 200 OK in 13ms (Views: 12.4ms | Allocations: 6647)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:41:27 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4250.2ms | Allocations: 36271)
+Completed 200 OK in 4257ms (Views: 4251.2ms | Allocations: 36530)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:41:41 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4204.5ms | Allocations: 36234)
+Completed 200 OK in 4205ms (Views: 4204.8ms | Allocations: 36493)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:42:16 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4241.5ms | Allocations: 36273)
+Completed 200 OK in 4242ms (Views: 4241.8ms | Allocations: 36532)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:42:24 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 6386)
+Completed 200 OK in 7ms (Views: 7.0ms | Allocations: 6645)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:42:25 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6400)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 6659)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:43:38 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 137)
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 7613)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 8464)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:43:58 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 7611)
+Completed 200 OK in 12ms (Views: 11.8ms | Allocations: 8481)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:44:09 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 7601)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 8470)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:44:30 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 135)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 7632)
+Completed 200 OK in 14ms (Views: 13.3ms | Allocations: 8502)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:44:31 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 3.1ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 6412)
+Completed 200 OK in 13ms (Views: 13.1ms | Allocations: 6689)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:44:38 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 7602)
+Completed 200 OK in 9ms (Views: 8.8ms | Allocations: 8454)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:46:40 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6398)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 6675)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:47:02 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 978)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 7604)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 8455)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:47:04 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6421)
+Completed 200 OK in 8ms (Views: 8.1ms | Allocations: 6698)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:47:39 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 133)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 7623)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 8474)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:47:45 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6415)
+Completed 200 OK in 7ms (Views: 7.0ms | Allocations: 6693)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:47:46 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 5.1ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6409)
+Completed 200 OK in 13ms (Views: 12.7ms | Allocations: 6668)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:47:47 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 6403)
+Completed 200 OK in 11ms (Views: 11.2ms | Allocations: 6663)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:47:52 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 137)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7607)
+Completed 200 OK in 10ms (Views: 9.8ms | Allocations: 8459)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:48:17 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 132)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 7608)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 8478)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:48:57 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4243.3ms | Allocations: 36444)
+Completed 200 OK in 4244ms (Views: 4243.7ms | Allocations: 36721)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:49:17 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4227.8ms | Allocations: 36243)
+Completed 200 OK in 4228ms (Views: 4228.1ms | Allocations: 36502)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:49:36 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4176.2ms | Allocations: 36251)
+Completed 200 OK in 4177ms (Views: 4176.5ms | Allocations: 36511)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:49:48 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4191.4ms | Allocations: 36286)
+Completed 200 OK in 4192ms (Views: 4191.7ms | Allocations: 36545)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:50:50 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4185.7ms | Allocations: 36279)
+Completed 200 OK in 4186ms (Views: 4186.1ms | Allocations: 36538)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:51:09 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4175.1ms | Allocations: 36241)
+Completed 200 OK in 4176ms (Views: 4175.4ms | Allocations: 36500)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:51:19 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4232.4ms | Allocations: 36272)
+Completed 200 OK in 4233ms (Views: 4232.7ms | Allocations: 36531)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:51:32 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4242.7ms | Allocations: 36245)
+Completed 200 OK in 4243ms (Views: 4243.1ms | Allocations: 36504)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:51:42 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 113)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 6526)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 6839)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-20 13:51:42 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6388)
+Completed 200 OK in 8ms (Views: 8.0ms | Allocations: 6647)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:51:43 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 6400)
+Completed 200 OK in 7ms (Views: 6.4ms | Allocations: 6659)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:51:49 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4197.6ms | Allocations: 36279)
+Completed 200 OK in 4198ms (Views: 4197.9ms | Allocations: 36538)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:52:00 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4211.3ms | Allocations: 36260)
+Completed 200 OK in 4212ms (Views: 4211.8ms | Allocations: 36519)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:52:12 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4181.2ms | Allocations: 36257)
+Completed 200 OK in 4182ms (Views: 4181.5ms | Allocations: 36516)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:52:48 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6435)
+Completed 200 OK in 9ms (Views: 9.0ms | Allocations: 6695)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:53:04 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4156.5ms | Allocations: 36270)
+Completed 200 OK in 4157ms (Views: 4156.8ms | Allocations: 36529)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:53:16 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4194.5ms | Allocations: 36221)
+Completed 200 OK in 4195ms (Views: 4194.8ms | Allocations: 36480)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:53:50 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4183.5ms | Allocations: 36299)
+Completed 200 OK in 4184ms (Views: 4183.9ms | Allocations: 36558)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:54:04 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4167.5ms | Allocations: 36239)
+Completed 200 OK in 4168ms (Views: 4167.8ms | Allocations: 36498)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:54:15 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4205.5ms | Allocations: 36258)
+Completed 200 OK in 4206ms (Views: 4205.8ms | Allocations: 36517)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 13:56:40 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4203.0ms | Allocations: 36260)
+Completed 200 OK in 4204ms (Views: 4203.3ms | Allocations: 36519)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:00:13 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 139)
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 7618)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 8469)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:00:55 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 1464)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 8062)
+Completed 500 Internal Server Error in 9ms (Allocations: 8909)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg navbar-indigo ">  
+  <div class="container-fluid">
+  <%= link_to 'VaultTec', root_path,class:"navbar-brand"%>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+        <li class="nav-item">
+          <%= link_to 'Contacts',home_about_path,class:"nav-link"class:"navbar-indigo "%>
+        </li>
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to 'Request',requests_path,class:"nav-link"class:"navbar-indigo "%>
+            </li>
+          
+            <li class="nav-item">
+              <%= link_to 'Add request',new_request_path,class:"nav-link"class:"navbar-indigo "%>
+            </li>  
+        <% end %>
+        
+
+      </ul>
+      <ul class="navbar-nav ">
+        <% if user_signed_in? %>
+            
+            <li class="nav-item " >
+
+              <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+              
+            </li>
+        <% else%>   
+            <li class="nav-button " >
+            
+              <%= button_to 'Log in',new_user_session_path,class: "btn btn-success"%>
+            </li>
+
+            <li  >
+              
+              <%= button_to 'Registration',new_user_registration_path,class: "btn btn-secondary"%>
+            </li>
+          <% end %>
+
+      </ul>
+      
+      
+        
+      
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg navbar-indigo ">  
+2:      <div class="container-fluid">
+3:      <%= link_to 'VaultTec', root_path,class:"navbar-brand"%>
+4:        
+5:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+6:          <span class="navbar-toggler-icon"></span>
+7:        </button>
+8:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+9:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+10:          
+11:            <li class="nav-item">
+12:              <%= link_to 'Contacts',home_about_path,class:"nav-link"class:"navbar-indigo "%>
+13:            </li>
+14:              <% if user_signed_in? %>
+15:                <li class="nav-item">
+16:                  <%= link_to 'Request',requests_path,class:"nav-link"class:"navbar-indigo "%>
+17:                </li>
+18:              
+19:                <li class="nav-item">
+20:                  <%= link_to 'Add request',new_request_path,class:"nav-link"class:"navbar-indigo "%>
+21:                </li>  
+22:            <% end %>
+23:            
+24:    
+25:          </ul>
+26:          <ul class="navbar-nav ">
+27:            <% if user_signed_in? %>
+28:                
+29:                <li class="nav-item " >
+30:    
+31:                  <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+32:                  
+33:                </li>
+34:            <% else%>   
+35:                <li class="nav-button " >
+36:                
+37:                  <%= button_to 'Log in',new_user_session_path,class: "btn btn-success"%>
+38:                </li>
+39:    
+40:                <li  >
+41:                  
+42:                  <%= button_to 'Registration',new_user_registration_path,class: "btn btn-secondary"%>
+43:                </li>
+44:              <% end %>
+45:    
+46:          </ul>
+47:          
+48:          
+49:            
+50:          
+51:        </div>
+52:      </div>
+53:    </nav>
+  
+app/views/home/_header.html.erb:12: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:16: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:16: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:20: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:55: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:16: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:16: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:20: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:55: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:16: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:16: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:20: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:55: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:16: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:16: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:20: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:55: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:16: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:16: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:20: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:55: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:12: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:16: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:16: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/home/_header.html.erb:20: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/home/_header.html.erb:22: syntax error, unexpected `end', expecting ')'
+app/views/home/_header.html.erb:55: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:18
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:01:35 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 134)
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 7612)
+Completed 200 OK in 12ms (Views: 11.9ms | Allocations: 8476)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:01:45 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7607)
+Completed 200 OK in 14ms (Views: 13.2ms | Allocations: 8476)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:02:18 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4241.2ms | Allocations: 36457)
+Completed 200 OK in 4242ms (Views: 4241.5ms | Allocations: 36734)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:02:28 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 139)
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7684)
+Completed 200 OK in 10ms (Views: 10.0ms | Allocations: 8536)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:03:07 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 134)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 4169.5ms | Allocations: 37665)
+Completed 200 OK in 4171ms (Views: 4170.7ms | Allocations: 38534)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:03:59 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4220.5ms | Allocations: 36278)
+Completed 200 OK in 4222ms (Views: 4221.4ms | Allocations: 36555)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:09:33 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4397.6ms | Allocations: 36254)
+Completed 200 OK in 4398ms (Views: 4398.1ms | Allocations: 36514)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:27:29 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4413.0ms | Allocations: 36252)
+Completed 200 OK in 4414ms (Views: 4413.3ms | Allocations: 36511)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:29:53 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6409)
+Completed 200 OK in 9ms (Views: 9.2ms | Allocations: 6668)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:34:59 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4339.0ms | Allocations: 36262)
+Completed 200 OK in 4340ms (Views: 4339.5ms | Allocations: 36521)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:35:27 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4138.9ms | Allocations: 36254)
+Completed 200 OK in 4140ms (Views: 4139.5ms | Allocations: 36513)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:35:54 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4199.3ms | Allocations: 36305)
+Completed 200 OK in 4200ms (Views: 4199.7ms | Allocations: 36564)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:36:06 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4196.8ms | Allocations: 36275)
+Completed 200 OK in 4197ms (Views: 4197.1ms | Allocations: 36535)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:36:19 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4227.4ms | Allocations: 36275)
+Completed 200 OK in 4228ms (Views: 4227.7ms | Allocations: 36534)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:36:39 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4155.8ms | Allocations: 36281)
+Completed 200 OK in 4156ms (Views: 4156.1ms | Allocations: 36540)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:36:49 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4146.1ms | Allocations: 36267)
+Completed 200 OK in 4147ms (Views: 4146.4ms | Allocations: 36526)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:37:03 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4249.3ms | Allocations: 36269)
+Completed 200 OK in 4250ms (Views: 4249.6ms | Allocations: 36528)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:37:28 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4278.8ms | Allocations: 36239)
+Completed 200 OK in 4279ms (Views: 4279.2ms | Allocations: 36499)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:38:36 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4232.8ms | Allocations: 36240)
+Completed 200 OK in 4233ms (Views: 4233.1ms | Allocations: 36499)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:38:50 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4174.6ms | Allocations: 36275)
+Completed 200 OK in 4175ms (Views: 4174.9ms | Allocations: 36534)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:39:21 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4244.8ms | Allocations: 36269)
+Completed 200 OK in 4245ms (Views: 4245.1ms | Allocations: 36528)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:39:35 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4187.9ms | Allocations: 36276)
+Completed 200 OK in 4189ms (Views: 4188.4ms | Allocations: 36535)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:40:01 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4240.3ms | Allocations: 36270)
+Completed 200 OK in 4241ms (Views: 4240.6ms | Allocations: 36529)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:40:13 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4185.6ms | Allocations: 36257)
+Completed 200 OK in 4186ms (Views: 4185.9ms | Allocations: 36516)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:40:26 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4182.2ms | Allocations: 36281)
+Completed 200 OK in 4183ms (Views: 4182.5ms | Allocations: 36540)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:40:41 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4147.1ms | Allocations: 36275)
+Completed 200 OK in 4148ms (Views: 4147.4ms | Allocations: 36534)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:41:12 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4145.3ms | Allocations: 36274)
+Completed 200 OK in 4146ms (Views: 4145.6ms | Allocations: 36533)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:41:58 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4152.7ms | Allocations: 36298)
+Completed 200 OK in 4153ms (Views: 4153.1ms | Allocations: 36557)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:42:57 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6453)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 6712)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:43:07 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4155.5ms | Allocations: 36277)
+Completed 200 OK in 4156ms (Views: 4155.8ms | Allocations: 36536)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:43:50 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 6397)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 6656)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:43:54 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 6409)
+Completed 200 OK in 28ms (Views: 27.7ms | Allocations: 6668)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:44:07 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4166.0ms | Allocations: 36268)
+Completed 200 OK in 4167ms (Views: 4166.3ms | Allocations: 36527)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-20 14:44:44 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered layout layouts/application.html.erb (Duration: 4130.2ms | Allocations: 36267)
+Completed 200 OK in 4131ms (Views: 4130.5ms | Allocations: 36526)
+
+
