@@ -20707,3 +20707,1507 @@ Completed 200 OK in 25ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 774
 
   [1m[36mRequest Delete All (4.9ms)[0m  [1m[31mDELETE FROM "requests"[0m
   [1m[36mUser Delete All (4.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:17:02 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3740)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3819)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 4089)
+
+
+  
+ActionView::Template::Error (undefined method `admin_permit' for nil:NilClass
+
+'.freeze; unless current_user.admin_permit 
+                             ^^^^^^^^^^^^^):
+    39:   </tbody>
+    40: </table>
+    41: 
+    42: <% unless current_user.admin_permit %>
+    43:   <%=  link_to "New request", new_request_path, class:"btn btn-primary"  %>
+    44: <% end %>
+    45:   
+  
+app/views/requests/index.html.erb:42
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:17:13 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.3ms | Allocations: 2535)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5259)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5338)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 5638)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass
+
+'.freeze;@request.user_id = current_user.id
+                                        ^^^):
+    1: <h1>Create request</h1>
+    2: 
+    3: <%= render "form", request: @request %>
+    4: <%@request.user_id = current_user.id%>
+    5: 
+    6: <br>
+    7: 
+  
+app/views/requests/new.html.erb:4
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:17:22 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.1ms | Allocations: 2364)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4924)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5003)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 5259)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass
+
+'.freeze;@request.user_id = current_user.id
+                                        ^^^):
+    1: <h1>Create request</h1>
+    2: 
+    3: <%= render "form", request: @request %>
+    4: <%@request.user_id = current_user.id%>
+    5: 
+    6: <br>
+    7: 
+  
+app/views/requests/new.html.erb:4
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:17:24 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 1107)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 7078)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.1ms | Allocations: 7349)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:17:25 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 108)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 6304)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 6620)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:17:26 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 379)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 561)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2312)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8447)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 9397)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:18:10 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 432)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2284)
+  Rendered home/_header.html.erb (Duration: 50.3ms | Allocations: 32481)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 40837)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 42008)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:18:28 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 135)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 841)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7348)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 8222)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:18:29 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 111)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6321)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6655)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:18:30 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6231)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 6494)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:18:30 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2286)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 385)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8416)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 9393)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-21 18:18:33 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 209)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1939)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 408)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8117)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 9179)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:18:34 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 420)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1284)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7177)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 7668)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:18:43 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6127)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 6390)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:18:44 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6139)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6401)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:19:00 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 347)
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 1038)
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 45093)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.0ms | Allocations: 48540)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:19:00 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 695)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 727)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4025)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 10161)
+Completed 200 OK in 29ms (Views: 20.6ms | ActiveRecord: 0.5ms | Allocations: 17441)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-21 18:19:02 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 218)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2063)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 411)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8248)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 9552)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:19:03 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1284)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 7278)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7781)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:20:27 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2286)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 749)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 9108)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 10247)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:20:30 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 435)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1279)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 7172)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 7663)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:20:34 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 137)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6717)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 7380)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:20:34 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 112)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6253)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 6602)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:20:36 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1320)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 7222)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 7709)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-21 18:20:47 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 209)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1939)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 408)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8117)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 9064)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:22:08 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 423)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1284)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 7177)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 7667)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-21 18:22:10 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1131)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7057)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 7613)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:22:12 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 357)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1279)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 7172)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 7629)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-21 18:22:27 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1131)
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 7057)
+Completed 200 OK in 45ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 7597)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-04-21 18:22:49 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sasha@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sasha@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "admin_permit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "sasha@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["admin_permit", nil], ["created_at", "2023-04-21 15:22:49.462732"], ["updated_at", "2023-04-21 15:22:49.462732"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 227ms (ActiveRecord: 4.2ms | Allocations: 12402)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:22:49 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 1579)
+  Rendered layouts/_allerts.html.erb (Duration: 0.9ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 7914)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 8226)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:22:52 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 4.8ms | Allocations: 4040)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5340)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 409)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 11537)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 0.4ms | Allocations: 18321)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:23:45 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.0ms | Allocations: 2859)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3846)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9919)
+Completed 422 Unprocessable Entity in 28ms (Views: 17.3ms | ActiveRecord: 0.1ms | Allocations: 14402)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:23:50 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.3ms | Allocations: 2611)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3453)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 9397)
+Completed 422 Unprocessable Entity in 18ms (Views: 16.3ms | ActiveRecord: 0.1ms | Allocations: 10627)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:27:42 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 0.9ms | Allocations: 1607)
+  Rendered requests/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1916)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2002)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3741)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: request) do |form| %>
+  <% if request.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(request.errors.count, "error") %> prohibited this request from being saved:</h2>
+
+      <ul>
+        <% request.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
+  <div class="btn-group">
+    <%= form.label :category, style: "display: block"%>
+  </div>
+  <div class="btn-group">
+    <%= form.select :category, [['Choose the category', ''],['House', 'House'], ['Food', 'Food'], ['Transportation', 'Transportation'], ['Consulting', 'Consulting'],['Medical services','Medical services'],['Legal services','Legal services']], {}, { class: 'form-control', type: "button", class: "btn btn-danger dropdown-toggle", prompt: 'Choose the category' } %>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-group">
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name,class:"form-control",placeholder:"Joe" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name,class:"form-control",placeholder:"Biden"%>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email,class:"form-control",placeholder:"example@example.com" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone,class:"form-control",placeholder:"012 45 67 891" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :text_of_request, style: "display: block" %>
+    <%= form.text_area :text_of_request,class:"form-control",placeholder:"Here you can write about your request" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.hidden_field :user_id, id: :request_user_id ,value:current_user.id class:"form-control-sm"  %>
+    
+    
+  </div>
+ 
+
+
+  <br>
+  <div>
+    <%= form.submit class: "btn btn-success"%>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: request) do |form| %>
+2:      <% if request.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(request.errors.count, "error") %> prohibited this request from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% request.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:    
+14:    
+15:    
+16:    
+17:      <div class="btn-group">
+18:        <%= form.label :category, style: "display: block"%>
+19:      </div>
+20:      <div class="btn-group">
+21:        <%= form.select :category, [['Choose the category', ''],['House', 'House'], ['Food', 'Food'], ['Transportation', 'Transportation'], ['Consulting', 'Consulting'],['Medical services','Medical services'],['Legal services','Legal services']], {}, { class: 'form-control', type: "button", class: "btn btn-danger dropdown-toggle", prompt: 'Choose the category' } %>
+22:      </div>
+23:    
+24:      <br>
+25:      <br>
+26:    
+27:      <div class="form-group">
+28:        <%= form.label :first_name, style: "display: block" %>
+29:        <%= form.text_field :first_name,class:"form-control",placeholder:"Joe" %>
+30:      </div>
+31:    
+32:      <div class="form-group">
+33:        <%= form.label :last_name, style: "display: block" %>
+34:        <%= form.text_field :last_name,class:"form-control",placeholder:"Biden"%>
+35:      </div>
+36:    
+37:      <div class="form-group">
+38:        <%= form.label :email, style: "display: block" %>
+39:        <%= form.text_field :email,class:"form-control",placeholder:"example@example.com" %>
+40:      </div>
+41:    
+42:      <div class="form-group">
+43:        <%= form.label :phone, style: "display: block" %>
+44:        <%= form.text_field :phone,class:"form-control",placeholder:"012 45 67 891" %>
+45:      </div>
+46:    
+47:      <div class="form-group">
+48:        <%= form.label :text_of_request, style: "display: block" %>
+49:        <%= form.text_area :text_of_request,class:"form-control",placeholder:"Here you can write about your request" %>
+50:      </div>
+51:    
+52:      <div class="field form-group">
+53:        <%= form.hidden_field :user_id, id: :request_user_id ,value:current_user.id class:"form-control-sm"  %>
+54:        
+55:        
+56:      </div>
+57:     
+58:    
+59:    
+60:      <br>
+61:      <div>
+62:        <%= form.submit class: "btn btn-success"%>
+63:      </div>
+64:    <% end %>
+  
+app/views/requests/_form.html.erb:53: syntax error, unexpected label, expecting ')'
+app/views/requests/_form.html.erb:53: syntax error, unexpected label, expecting ')'
+app/views/requests/_form.html.erb:53: syntax error, unexpected label, expecting ')'
+app/views/requests/_form.html.erb:53: syntax error, unexpected label, expecting ')'
+app/views/requests/_form.html.erb:53: syntax error, unexpected label, expecting ')'
+app/views/requests/_form.html.erb:53: syntax error, unexpected label, expecting ')'
+app/views/requests/new.html.erb:3
+app/controllers/requests_controller.rb:32:in `block (2 levels) in create'
+app/controllers/requests_controller.rb:27:in `create'
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:28:02 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 4.7ms | Allocations: 3388)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 4638)
+  Rendered home/_header.html.erb (Duration: 2.4ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 11594)
+Completed 422 Unprocessable Entity in 28ms (Views: 25.8ms | ActiveRecord: 0.1ms | Allocations: 13464)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:28:52 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/_form.html.erb:54
+  Rendered requests/_form.html.erb (Duration: 9.0ms | Allocations: 4322)
+  Rendered requests/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 4676)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 11533)
+Completed 422 Unprocessable Entity in 24ms (Views: 22.6ms | ActiveRecord: 0.2ms | Allocations: 13386)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:28:57 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/_form.html.erb:54
+  Rendered requests/_form.html.erb (Duration: 6.5ms | Allocations: 3382)
+  Rendered requests/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3483)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 9427)
+Completed 422 Unprocessable Entity in 19ms (Views: 17.3ms | ActiveRecord: 0.1ms | Allocations: 10702)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:28:59 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/_form.html.erb:54
+  Rendered requests/_form.html.erb (Duration: 4.9ms | Allocations: 3375)
+  Rendered requests/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3476)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 9420)
+Completed 422 Unprocessable Entity in 23ms (Views: 21.4ms | ActiveRecord: 0.1ms | Allocations: 10561)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:30:32 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"name", "last_name"=>"surname", "email"=>"email@gmail.com", "phone"=>"123 45 67  89", "text_of_request"=>"wwdfddfdfg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.7ms | Allocations: 3388)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4638)
+  Rendered home/_header.html.erb (Duration: 4.6ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 11495)
+Completed 422 Unprocessable Entity in 26ms (Views: 23.7ms | ActiveRecord: 0.1ms | Allocations: 13211)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:30:33 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 136)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 1367)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 7557)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.1ms | Allocations: 8228)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:30:34 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 7023)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms | Allocations: 7371)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:30:34 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 4.0ms | Allocations: 2439)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3280)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9232)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms | Allocations: 9522)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:31:00 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"sas", "last_name"=>"sdfsf", "email"=>"sasha@gmail.com", "phone"=>"123 34 4 4 4", "text_of_request"=>"fdfdf", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.7ms | Allocations: 2619)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3460)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 9418)
+Completed 422 Unprocessable Entity in 20ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 10601)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:33:23 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1955)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 7908)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 8317)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:33:26 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.4ms | Allocations: 2346)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3186)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 9138)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 9419)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:33:28 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1502)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 7455)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 7729)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:33:30 +0300
+Processing by RequestsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/index.html.erb:42
+  Rendered requests/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1505)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 7458)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 7732)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:34:56 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.8ms | Allocations: 2361)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3201)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 9153)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 9434)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:35:10 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"", "first_name"=>"dfdf", "last_name"=>"df", "email"=>"sddss@gmail.com", "phone"=>"12324242", "text_of_request"=>"dgdgdgd", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 4.9ms | Allocations: 2610)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3451)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 9426)
+Completed 422 Unprocessable Entity in 26ms (Views: 24.8ms | ActiveRecord: 0.1ms | Allocations: 10561)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:35:14 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"dfdf", "last_name"=>"df", "email"=>"sddss@gmail.com", "phone"=>"12324242", "text_of_request"=>"dgdgdgd", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 4.5ms | Allocations: 2610)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/new.html.erb:4
+  Rendered requests/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3451)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 9409)
+Completed 422 Unprocessable Entity in 17ms (Views: 14.9ms | ActiveRecord: 0.1ms | Allocations: 10583)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:44:01 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"dfdf", "last_name"=>"df", "email"=>"sddss@gmail.com", "phone"=>"12324242", "text_of_request"=>"dgdgdgd", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/_form.html.erb:54
+  Rendered requests/_form.html.erb (Duration: 8.2ms | Allocations: 4365)
+  Rendered requests/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4722)
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 11609)
+Completed 422 Unprocessable Entity in 26ms (Views: 22.3ms | ActiveRecord: 0.6ms | Allocations: 13483)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:44:19 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 135)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 1731)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 8262)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.1ms | Allocations: 9127)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:44:20 +0300
+Processing by RequestsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/_form.html.erb:54
+  Rendered requests/_form.html.erb (Duration: 6.6ms | Allocations: 4104)
+  Rendered requests/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 4473)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 408)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 10650)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.1ms | Allocations: 11346)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:44:32 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"", "first_name"=>"sff", "last_name"=>"fsdf", "email"=>"fssfs@gmail.com", "phone"=>"1313442424", "text_of_request"=>"dgdgdg", "user_id"=>""}, "commit"=>"Create Request"}
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/requests/_form.html.erb:54
+  Rendered requests/_form.html.erb (Duration: 7.4ms | Allocations: 3383)
+  Rendered requests/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3484)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 9428)
+Completed 422 Unprocessable Entity in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms | Allocations: 10635)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:46:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 347)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 17.1ms | Allocations: 9940)
+  Rendered layout layouts/application.html.erb (Duration: 85.0ms | Allocations: 54023)
+Completed 200 OK in 91ms (Views: 86.6ms | ActiveRecord: 0.9ms | Allocations: 57474)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:46:19 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 8.6ms | Allocations: 5473)
+  Rendered requests/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5876)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 411)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 12079)
+Completed 200 OK in 29ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 21220)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:46:37 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"wfs", "last_name"=>"sfs", "email"=>"sffsf@gmail.com", "phone"=>"1342342", "text_of_request"=>"ddfdfdf", "user_id"=>""}, "commit"=>"Create Request"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 4.6ms | Allocations: 2874)
+  Rendered requests/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2986)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 9159)
+Completed 422 Unprocessable Entity in 49ms (Views: 15.9ms | ActiveRecord: 0.1ms | Allocations: 13149)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:47:16 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"wfs", "last_name"=>"sfs", "email"=>"sffsf@gmail.com", "phone"=>"1342342", "text_of_request"=>"ddfdfdf", "user_id"=>""}, "commit"=>"Create Request"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 6.7ms | Allocations: 3315)
+  Rendered requests/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3688)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 10546)
+Completed 422 Unprocessable Entity in 28ms (Views: 24.8ms | ActiveRecord: 0.1ms | Allocations: 13592)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:47:17 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.2ms | Allocations: 2108)
+  Rendered requests/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2218)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 8173)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 9915)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:47:18 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.2ms | Allocations: 2107)
+  Rendered requests/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2217)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 8260)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 9810)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:50:24 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.7ms | Allocations: 2362)
+  Rendered requests/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2510)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 414)
+  Rendered layout layouts/application.html.erb (Duration: 78.9ms | Allocations: 20168)
+Completed 200 OK in 92ms (Views: 79.9ms | ActiveRecord: 1.0ms | Allocations: 29415)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:50:47 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"fdds", "last_name"=>"sffsf", "email"=>"sasha@gmail.com", "phone"=>"1324 34", "text_of_request"=>"fsddfd"}, "commit"=>"Create Request"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/requests_controller.rb:28:in `block in create'
+  [1m[36mRequest Create (0.3ms)[0m  [1m[32mINSERT INTO "requests" ("category", "first_name", "last_name", "email", "phone", "text_of_request", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "House"], ["first_name", "fdds"], ["last_name", "sffsf"], ["email", "sasha@gmail.com"], ["phone", "1324 34"], ["text_of_request", "fsddfd"], ["created_at", "2023-04-21 15:50:47.111474"], ["updated_at", "2023-04-21 15:50:47.111474"], ["user_id", 6]]
+  ↳ app/controllers/requests_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/requests_controller.rb:28:in `block in create'
+Redirected to http://127.0.0.1:3000/requests/9
+Completed 302 Found in 28ms (ActiveRecord: 5.7ms | Allocations: 8330)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:50:47 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.2ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 552)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 392)
+  Rendered layouts/_allerts.html.erb (Duration: 0.5ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 6951)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 9962)
+
+
+Started GET "/requests/9/edit" for 127.0.0.1 at 2023-04-21 18:50:59 +0300
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/edit.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.2ms | Allocations: 2314)
+  Rendered requests/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2635)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 395)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8588)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 10651)
+
+
+Started PATCH "/requests/9" for 127.0.0.1 at 2023-04-21 18:51:06 +0300
+Processing by RequestsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"fdds", "last_name"=>"sffsf", "email"=>"sasha@gmail.com", "phone"=>"1324 34", "text_of_request"=>"fsddfddd"}, "commit"=>"Update Request", "id"=>"9"}
+  [1m[36mRequest Load (0.2ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/requests_controller.rb:41:in `block in update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:41:in `block in update'
+  [1m[36mRequest Update (0.3ms)[0m  [1m[33mUPDATE "requests" SET "text_of_request" = ?, "updated_at" = ? WHERE "requests"."id" = ?[0m  [["text_of_request", "fsddfddd"], ["updated_at", "2023-04-21 15:51:06.190801"], ["id", 9]]
+  ↳ app/controllers/requests_controller.rb:41:in `block in update'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/requests_controller.rb:41:in `block in update'
+Redirected to http://127.0.0.1:3000/requests/9
+Completed 302 Found in 18ms (ActiveRecord: 4.5ms | Allocations: 6095)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:51:06 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 142)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 387)
+  Rendered layouts/_allerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6150)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 8165)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:51:08 +0300
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  Rendered requests/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1066)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 7019)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 8651)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:51:10 +0300
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  Rendered requests/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 667)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6620)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 8162)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:51:11 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6075)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 8072)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-04-21 18:51:17 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 6ms (ActiveRecord: 0.1ms | Allocations: 3012)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:51:17 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 136)
+  Rendered home/_header.html.erb (Duration: 5.3ms | Allocations: 564)
+  Rendered layouts/_allerts.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 6827)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 7628)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-21 18:51:18 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 410)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 13.5ms | Allocations: 732)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.2ms | Allocations: 3515)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 9749)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.0ms | Allocations: 10997)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-21 18:51:21 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2061)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 411)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 8246)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 9524)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-04-21 18:51:37 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sasha1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sasha1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "admin_permit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "sasha1@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["admin_permit", nil], ["created_at", "2023-04-21 15:51:37.642508"], ["updated_at", "2023-04-21 15:51:37.642508"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 221ms (ActiveRecord: 5.6ms | Allocations: 8129)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:51:37 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 1298)
+  Rendered layouts/_allerts.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 7432)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 7744)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:51:39 +0300
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  Rendered requests/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 679)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6634)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 8179)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:51:40 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6084)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 8109)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:51:49 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.3ms | Allocations: 2184)
+  Rendered requests/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2295)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 8290)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 9822)
+
+
+Started POST "/requests" for 127.0.0.1 at 2023-04-21 18:52:45 +0300
+Processing by RequestsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "request"=>{"category"=>"House", "first_name"=>"dfd", "last_name"=>"dfd", "email"=>"sasha@gmail.com", "phone"=>"123 43 53", "text_of_request"=>"dfdfd"}, "commit"=>"Create Request"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/requests_controller.rb:28:in `block in create'
+  [1m[36mRequest Create (0.3ms)[0m  [1m[32mINSERT INTO "requests" ("category", "first_name", "last_name", "email", "phone", "text_of_request", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "House"], ["first_name", "dfd"], ["last_name", "dfd"], ["email", "sasha@gmail.com"], ["phone", "123 43 53"], ["text_of_request", "dfdfd"], ["created_at", "2023-04-21 15:52:45.277746"], ["updated_at", "2023-04-21 15:52:45.277746"], ["user_id", 7]]
+  ↳ app/controllers/requests_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/requests_controller.rb:28:in `block in create'
+Redirected to http://127.0.0.1:3000/requests/10
+Completed 302 Found in 15ms (ActiveRecord: 8.6ms | Allocations: 3726)
+
+
+Started GET "/requests/10" for 127.0.0.1 at 2023-04-21 18:52:45 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 142)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 387)
+  Rendered layouts/_allerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6146)
+Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 8171)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:52:47 +0300
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.0ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  Rendered requests/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 734)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6687)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 8235)
+
+
+Started GET "/requests/10" for 127.0.0.1 at 2023-04-21 18:52:52 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 140)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 6080)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.2ms | Allocations: 8081)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:52:55 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6135)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 8145)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:52:58 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 6037)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 8060)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:53:05 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6036)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 8048)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:53:08 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6131)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 8158)
+
+
+Started GET "/requests/10" for 127.0.0.1 at 2023-04-21 18:53:10 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 6076)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.1ms | Allocations: 8070)
+
+
+Started GET "/requests/10" for 127.0.0.1 at 2023-04-21 18:53:14 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+  Rendered home/_header.html.erb (Duration: 3.6ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6081)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.1ms | Allocations: 8105)
+
+
+Started GET "/requests/10" for 127.0.0.1 at 2023-04-21 18:53:17 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+  Rendered home/_header.html.erb (Duration: 4.2ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 6075)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 8078)
+
+
+Started GET "/requests/9" for 127.0.0.1 at 2023-04-21 18:53:20 +0300
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/requests_controller.rb:64:in `set_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6036)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 8036)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-21 18:53:48 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6897)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 7159)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-21 18:53:50 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 142)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:16
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7034)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.1ms | Allocations: 7370)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:53:51 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 3.7ms | Allocations: 2107)
+  Rendered requests/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2217)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8271)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.1ms | Allocations: 9818)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:53:52 +0300
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.0ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  Rendered requests/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 734)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6785)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 8319)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:54:04 +0300
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  Rendered requests/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 734)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 6687)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 8218)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:54:05 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.1ms | Allocations: 2107)
+  Rendered requests/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2217)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 8182)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 9731)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:54:10 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.6ms | Allocations: 2107)
+  Rendered requests/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2217)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8256)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 9796)
+
+
+Started GET "/requests" for 127.0.0.1 at 2023-04-21 18:54:13 +0300
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.1ms)[0m  [1m[34mSELECT "requests".* FROM "requests"[0m
+  ↳ app/views/requests/index.html.erb:20
+  Rendered requests/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 734)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6735)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 8269)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2023-04-21 18:54:16 +0300
+Processing by RequestsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (Duration: 2.6ms | Allocations: 2107)
+  Rendered requests/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2217)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 8212)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 9758)
+
+
