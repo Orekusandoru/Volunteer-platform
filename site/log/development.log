@@ -17200,3 +17200,15 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 4139ms (Views: 4139.0ms | Allocations: 36599)
 
 
+Started GET "/" for 127.0.0.1 at 2023-04-21 01:14:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 347)
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 1041)
+  Rendered layout layouts/application.html.erb (Duration: 4567.9ms | Allocations: 84370)
+Completed 200 OK in 4576ms (Views: 4570.4ms | ActiveRecord: 0.0ms | Allocations: 87816)
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
