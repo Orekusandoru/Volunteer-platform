@@ -14,9 +14,12 @@
       <h5 class="card-title"><%=@request.email+"  "%>|<%="  "+@request.phone%></h5>
       <br>
       <p class="card-text"><%=@request.text_of_request%></p>
+      
+      <p><%=@request.user_id %></p>
+
       <br>
-      <% if current_user.email == @request.email or  current_user.admin_permit%>
-      <%= link_to "Edit this request", edit_request_path(@request),class:"btn btn-outline-primary" %>
+      <%if current_user.id== @request.user_id or  current_user.admin_permit%>
+        <%= link_to "Edit this request", edit_request_path(@request),class:"btn btn-outline-primary" %>
       <%end%> |
       <%= link_to "Back to requests", requests_path,class:"btn btn-outline-primary" %>
     </div>

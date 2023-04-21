@@ -1,6 +1,7 @@
 <h1>Create request</h1>
 
 <%= render "form", request: @request %>
+<%@request.user_id = current_user.id%>
 
 <br>
 

@@ -48,6 +48,15 @@
     <%= form.label :text_of_request, style: "display: block" %>
     <%= form.text_area :text_of_request,class:"form-control",placeholder:"Here you can write about your request" %>
   </div>
+
+  <div class="field form-group">
+    <%= form.hidden_field :user_id, id: :request_user_id , class:"form-control-sm"  %>
+    
+    
+  </div>
+ 
+
+
   <br>
   <div>
     <%= form.submit class: "btn btn-success"%>
