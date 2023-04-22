@@ -25416,3 +25416,218 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 8ms (Views: 8.0ms | Allocations: 6875)
 
 
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:38:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 350)
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 1630)
+  Rendered layout layouts/application.html.erb (Duration: 5117.6ms | Allocations: 89318)
+Completed 200 OK in 5130ms (Views: 5121.8ms | ActiveRecord: 0.0ms | Allocations: 92763)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:38:24 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 932)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6792)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 7120)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:38:25 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6614)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6876)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-22 22:38:26 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 130)
+  Rendered home/_header.html.erb (Duration: 6.9ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 6737)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 7078)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:38:27 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6628)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6894)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-22 22:38:36 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6625)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6891)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-22 22:38:38 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 727)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 4012)
+  Rendered home/_header.html.erb (Duration: 2.9ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 10648)
+Completed 200 OK in 37ms (Views: 25.7ms | ActiveRecord: 0.4ms | Allocations: 17923)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-22 22:38:41 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 218)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2079)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 912)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 8766)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 10023)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:38:42 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6678)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6959)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:43:09 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 7907)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 8770)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-22 22:43:10 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 109)
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6729)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 7063)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-22 22:43:10 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2289)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 886)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 8919)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 9892)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-22 22:43:11 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 209)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1959)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 909)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 8639)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 9694)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:43:13 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6667)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 6949)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-22 22:43:16 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 6619)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 6881)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-04-22 22:44:28 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6625)
+Completed 200 OK in 9ms (Views: 8.9ms | Allocations: 6884)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-04-22 22:44:29 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (Allocations: 389)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1283)
+  Rendered home/_header.html.erb (Duration: 6.3ms | Allocations: 833)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 7667)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 8141)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-04-22 22:44:30 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1142)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 852)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 7578)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 8115)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-22 22:44:31 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6628)
+Completed 200 OK in 11ms (Views: 10.4ms | Allocations: 6887)
+
+
