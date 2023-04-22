@@ -30,12 +30,30 @@
 
 
   
-.transparent-image {
+.logo{
   
-    background-color: rgba(0, 0, 0, 0);
+  width: 50px;
+  height: auto;
 
   }
-  
+
+.body {
+    
+    background-image:url("/assets/bg.jpg")!important;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    height: 100vh;
+    background-position: center center;
+  }
+
+.dbody {
+    
+    background-color:blanchedalmond;
+    
+  }
+
 
   
   
+  
+
