@@ -19,7 +19,7 @@
       <br>
       <%if current_user.id== @request.user_id or  current_user.admin_permit%>
         <%= link_to "Edit this request", edit_request_path(@request),class:"btn btn-outline-primary" %>
-      <%end%> |
+      |<%end%> 
       <%= link_to "Back to requests", requests_path,class:"btn btn-outline-primary" %>
     </div>
 </div>
