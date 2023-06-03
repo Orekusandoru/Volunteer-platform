@@ -28,12 +28,20 @@
       </ul>
       <ul class="navbar-nav ">
         <% if user_signed_in? %>
+            <li class="nav-button " >
+
+              <%= button_to "Edit profile", edit_user_registration_path, method: :get ,class: "btn btn-warning" %>
+              
+            </li>
+
             
             <li class="nav-button " >
 
               <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
               
             </li>
+             
+
         <% else%>   
             <li class="nav-button " >
             
