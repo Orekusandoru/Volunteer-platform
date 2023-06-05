@@ -8,4 +8,6 @@ class User < ApplicationRecord
   validates :surname, presence: true
 
   has_many :requests
+  has_many :comments
+  
 end
