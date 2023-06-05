@@ -29526,3 +29526,67 @@ Migrating to AddNameAndSurnameToUsers (20230604140748)
   [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for ::1 at 2023-06-05 17:25:38 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 260)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 5926)
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 1468)
+  Rendered layout layouts/application.html.erb (Duration: 78.3ms | Allocations: 57507)
+Completed 200 OK in 96ms (Views: 81.6ms | ActiveRecord: 0.4ms | Allocations: 68713)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for ::1 at 2023-06-05 17:28:40 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1870)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 932)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 20250)
+Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 0.6ms | Allocations: 24580)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-06-05 17:28:48 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 682)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 732)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2872)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9602)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 10777)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-06-05 17:28:56 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sasha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sasha@gmail.com"], ["LIMIT", 1]]
+Redirected to http://[::1]:3000/
+Completed 303 See Other in 217ms (ActiveRecord: 0.2ms | Allocations: 5862)
+
+
+Started GET "/" for ::1 at 2023-06-05 17:28:57 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:17
+  Rendered home/_header.html.erb (Duration: 2.7ms | Allocations: 2059)
+  Rendered layouts/_allerts.html.erb (Duration: 2.9ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 8567)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 9419)
+
+
