@@ -1,31 +1,40 @@
-<div>
-  <br>
-  <h3>Comments:</h3>
-  <% @request.comments.each do |comment| %>
-    <div class="card">
-      <div class="card-header">
-        <%= comment.user.name if comment.user %>
-      </div>
-      <div class="card-body">
-        <p class="card-text"><%= comment.body %></p>
-      </div>
-    </div>
-  <% end %>
-</div>
 
 <% if user_signed_in? %>
   <div>
-    <br>
+    
     <h3>Add a Comment:</h3>
     <%= form_with(model: [ @request, @request.comments.build ], url: request_comments_path(@request)) do |form| %>
       <%= form.hidden_field :request_id, value: @request.id %>
       <div class="form-group">
         <%= form.text_area :body, class: "form-control", placeholder: "Your comment..." %>
       </div>
-      
+      <br/>
       <%= form.submit "Submit",name: nil, class: "btn btn-primary" %>
     <% end %>
   </div>
 <% else %>
   <p>Please <%= link_to "sign in", new_user_session_path %> to add a comment.</p>
 <% end %>
+<div>
+  
+  <h3>Comments:</h3>
+  
+  <% @request.comments.each do |comment| %>
+  <%if comment.user%>
+    <div class="card">
+      <div class="card-header">
+        <%= comment.user.name if comment.user %>
+      </div>
+      <div class="card-body ">
+        <p class="card-comnt"><%= comment.body %></p>
+      </div>
+       <% if current_user.id == comment.user_id || current_user.admin_permit %>
+        <%= button_to "Destroy this comment", request_comment_path(@request, comment), method: :delete, class: "btn btn-danger" %>
+      <% end %>
+    </div>
+    <%end%>
+    <br/>
+  <% end %>
+  <br/>
+</div>
+

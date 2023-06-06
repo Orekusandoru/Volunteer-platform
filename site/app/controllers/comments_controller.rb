@@ -11,13 +11,22 @@ class CommentsController < ApplicationController
           render 'requests/show'
         end
       end
-    def update
+     def update
         @comment = Comment.find(params[:id])
         if @comment.update(comment_params)
           redirect_to @comment.request
         else
           render 'edit'
         end
+      end
+
+     
+
+      def destroy
+        @request = Request.find(params[:request_id])
+        @comment = @request.comments.find(params[:id])
+        @comment.destroy
+        redirect_to request_url(@request), notice: "Comment was successfully deleted."
       end
 
       private

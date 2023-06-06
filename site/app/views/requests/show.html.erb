@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 
 <p>
 <div class="card">
@@ -21,16 +19,18 @@
         <%= link_to "Edit this request", edit_request_path(@request),class:"btn btn-outline-primary" %>
       |<%end%> 
       <%= link_to "Back to requests", requests_path,class:"btn btn-outline-primary" %>
+      <br>
+      <br>
+      <% if current_user.admin_permit %>
+         <%= button_to "Destroy this request", @request,class: "btn btn-danger", method: :delete %>
+      <% end %>
+  
     </div>
 </div>
 
 </p>
 <div>
-<br>
-<br>
-<% if current_user.admin_permit %>
-  <%= button_to "Destroy this request", @request, method: :delete %>
-<% end %>
-  
+
+
 </div>
 <%=render "comments/form"%>
