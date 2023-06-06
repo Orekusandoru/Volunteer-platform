@@ -1,3 +1,4 @@
+<body class ="dbody">
 <p style="color: green"></p>
 
 <h1>All requests</h1>
@@ -11,6 +12,7 @@
       <th scope="col">Phone</th>
       <th scope="col">Text</th>
       <th scope="col">Show</th>
+      <th scope="col">Date of creation</th>
     </tr>
   </thead>
 
@@ -32,6 +34,7 @@
             
               
             </p></td>
+          <td><%= request.created_at %></td>
         </tr>
         
       <% end %>
@@ -43,5 +46,5 @@
   <%=  link_to "New request", new_request_path, class:"btn btn-primary"  %>
 <% end %>
   
-
+</body> 
 
