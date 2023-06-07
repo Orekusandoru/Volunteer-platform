@@ -19,7 +19,12 @@ class CommentsController < ApplicationController
           render 'edit'
         end
       end
-
+      def destroy_all
+        @request = Request.find(params[:request_id])
+        @request.comments.destroy_all
+        redirect_to request_url(@request), notice: "All comments were successfully deleted."
+      end
+    
      
 
       def destroy
